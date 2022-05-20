@@ -1,0 +1,7 @@
+Работа с Git. Тонкости и нюансы.
+
+git push, git pull, git fetch, git merge, git rebase -- по крайней мере эти команды связаны и по мануалу (git-scm.com содержит все мануалы, гайды и ещё и предоставляет возможность искать по этим документам)
+видно, каким образом. К примеру, в git pull ты можешь указать флаг --rebase, который стянет и совершит ребейз. Кроме того, ты можешь создать локально бранч с помощью git fetch (TODO показать пример). git merge -- merge commit is a special type of commit (TODO describe better what you mean -- why special). 
+И в push, fetch, merge или pull, можно указывать refspec. Он описыватся вроде как в gitrevisions (вроде как из мана по push или merge). По крайней мере один флаг --force можно упростить, если использовать существующий способ работы с refspec (git push :refs/heds/<branch-name>. И ещё push --delete можно упростить. Кроме того, так ты можешь работать ещё больше с конкретными штуками, которые тебя интересуют -- HEAD, SHA-1, ref names (tags, branches, refs/, remotes/<remote-name>/<branch-name>). 
+Стоит разобраться, как работать с тегами. 
+Здесь ещё есть вопросы, но для начала можно оформить всё в блог.
